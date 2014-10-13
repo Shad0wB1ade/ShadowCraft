@@ -1,0 +1,63 @@
+﻿# ShadowCraft English Language Localization File
+
+itemGroup.shadowcraft=ShadowCraft
+
+tile.shadowcraft:shadowOre.name=Shadow Ore
+tile.shadowcraft:netherShadowOre.name=Nether Shadow Ore
+tile.shadowcraft:endShadowOre.name=End Shadow Ore
+tile.shadowcraft:shadowMetalBlock.name=Shadow Metal Block
+tile.shadowcraft:shadowStarBlock.name=Shadow Star Block
+tile.shadowCrops.name=Shadow Crops
+
+item.shadowcraft:shadowShards.name=Shadow Shards
+item.shadowcraft:shadowCrystal.name=Shadow Crystal
+item.shadowcraft:shadowNugget.name=Shadow Nugget
+item.shadowcraft:shadowIngot.name=Shadow Ingot
+item.shadowcraft:shadowGear.name=Shadow Gear
+item.shadowcraft:shadowOrb.name=Shadow Orb
+item.shadowcraft:shadowStar.name=Shadow Star
+item.shadowcraft:shadowStick.name=Shadow Stick
+item.shadowcraft:shadowStickLong.name=Shadow Long Stick
+item.shadowcraft:shadowPlate.name=Shadow Plate
+item.shadowcraft:shadowSeeds.name=Shadow Seeds
+
+item.shadowcraft:shadowSword.name=Shadow Blade
+item.shadowcraft:shadowPickaxe.name=Shadow Pickaxe
+item.shadowcraft:shadowSpade.name=Shadow Shovel
+item.shadowcraft:shadowAxe.name=Shadow Axe
+item.shadowcraft:shadowHoe.name=Shadow Hoe
+item.shadowcraft:shadowShears.name=Shadow Shears
+item.shadowcraft:shadowFishingRod.name=Shadow Fishing Rod [BROKEN]
+item.shadowcraft:shadowDisassembler.name=Shadow Disassembler
+
+item.shadowcraft:shadowHelmet.name=Shadow Helmet
+item.shadowcraft:shadowChestplate.name=Shadow Chestplate
+item.shadowcraft:shadowLeggings.name=Shadow Leggings
+item.shadowcraft:shadowBoots.name=Shadow Boots
+item.shadowcraft:shadowHelmetOfRevealing.name=Shadow Helmet Of Revealing
+
+item.shadowcraft:shadowAmuletOfRegeneration.name=Shadow Amulet Of Regeneration
+item.shadowcraft:shadowRingOfFireResistance.name=Shadow Ring Of Fire Resistance
+item.shadowcraft:shadowRingOfNightVision.name=Shadow Ring Of Night Vision
+item.shadowcraft:shadowBeltOfFlight.name=Shadow Belt Of Flight
+
+item.shadowcraft:shadowWaraxe.name=Shadow Waraxe
+item.shadowcraft:shadowDagger.name=Shadow Dagger [WIP]
+item.shadowcraft:shadowMace.name=Shadow Mace
+item.shadowcraft:shadowSpear.name=Shadow Spear
+
+item.shadowcraft:shadowIronDust.name=Shadow Iron Dust
+item.shadowcraft:shadowGoldDust.name=Shadow Gold Dust
+item.shadowcraft:shadowCopperDust.name=Shadow Copper Dust
+item.shadowcraft:shadowTinDust.name=Shadow Tin Dust
+item.shadowcraft:shadowSilverDust.name=Shadow Silver Dust
+item.shadowcraft:shadowLeadDust.name=Shadow Lead Dust
+item.shadowcraft:shadowNickelDust.name=Shadow Nickel Dust
+item.shadowcraft:shadowPlatinumDust.name=Shadow Platinum Dust
+
+item.shadowcraft:copperIngot.name=Copper Ingot
+item.shadowcraft:tinIngot.name=Tin Ingot
+item.shadowcraft:silverIngot.name=Silver Ingot
+item.shadowcraft:leadIngot.name=Lead Ingot
+item.shadowcraft:nickelIngot.name=Nickel Ingot
+item.shadowcraft:platinumIngot.name=Platinum Ingot
