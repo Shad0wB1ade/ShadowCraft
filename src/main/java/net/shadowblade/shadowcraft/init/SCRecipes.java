@@ -57,7 +57,9 @@ public class SCRecipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowGear), " A ", "ABA", " A ",
                 'A', "ingotShadow",
                 'B', "ingotIron"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowOrb), "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", Items.flint));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowOrb), "AAA", "ABA", "AAA",
+                'A', "crystalShadow",
+                'B', Items.flint));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowStar), "AAA", "ABA", "AAA",
                 'A', "crystalShadow",
                 'B', Items.nether_star));
