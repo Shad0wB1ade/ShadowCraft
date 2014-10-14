@@ -13,6 +13,10 @@ public class SCBlocks
     public static final Block ShadowMetalBlock = new ShadowMetalBlock();
     public static final Block ShadowStarBlock = new ShadowStarBlock();
     public static final Block ShadowCrop = new ShadowCrop();
+    public static final Block ShadowStone = new ShadowStone();
+    public static final Block ShadowStoneBricks = new ShadowStoneBricks();
+    public static final Block ShadowStoneBricksCracked = new ShadowStoneBricksCracked();
+    public static final Block ShadowStoneBricksCarved = new ShadowStoneBricksCarved();
 
     public static void init()
     {
@@ -22,5 +26,9 @@ public class SCBlocks
         GameRegistry.registerBlock(ShadowMetalBlock, Refs.SHADOW_METAL_BLOCK);
         GameRegistry.registerBlock(ShadowStarBlock, Refs.SHADOW_STAR_BLOCK);
         GameRegistry.registerBlock(ShadowCrop, Refs.SHADOW_CROPS);
+        GameRegistry.registerBlock(ShadowStone, Refs.SHADOW_STONE);
+        GameRegistry.registerBlock(ShadowStoneBricks, Refs.SHADOW_STONE_BRICKS);
+        GameRegistry.registerBlock(ShadowStoneBricksCracked, Refs.SHADOW_STONE_BRICKS_CRACKED);
+        GameRegistry.registerBlock(ShadowStoneBricksCarved, Refs.SHADOW_STONE_BRICKS_CARVED);
     }
 }

@@ -17,10 +17,10 @@ public class BaseItem extends Item
         this.setMaxStackSize(64);
     }
     @Override
-    public String getUnlocalizedName()
-    {
-        return String.format("item.%s%s", Refs.TEXTURE_LOCATION, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
-    }
+     public String getUnlocalizedName()
+{
+    return String.format("item.%s%s", Refs.TEXTURE_LOCATION, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+}
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack)

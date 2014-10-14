@@ -60,4 +60,9 @@ public class ShadowArmor extends ItemArmor
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
+
+    @Override
+    public boolean hasEffect(ItemStack stack, int par2) {
+        return false;
+    }
 }

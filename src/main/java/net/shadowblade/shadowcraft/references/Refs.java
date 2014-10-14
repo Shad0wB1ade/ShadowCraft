@@ -81,6 +81,10 @@ public class Refs
     public static final String SHADOW_METAL_BLOCK = "shadowMetalBlock";
     public static final String SHADOW_STAR_BLOCK = "shadowStarBlock";
     public static final String SHADOW_CROPS = "shadowCrops";
+    public static final String SHADOW_STONE = "shadowStone";
+    public static final String SHADOW_STONE_BRICKS = "shadowStoneBricks";
+    public static final String SHADOW_STONE_BRICKS_CRACKED = "shadowStoneBricksCracked";
+    public static final String SHADOW_STONE_BRICKS_CARVED = "shadowStoneBricksCarved";
 
     //Ore Dictionary
     public static final String SHADOW_ORE_DICT = "oreShadow";

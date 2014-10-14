@@ -23,7 +23,9 @@ import net.shadowblade.shadowcraft.references.Refs;
 public class SCItems
 {
     //Tool Materials
-    public static ToolMaterial ShadowToolMaterial = EnumHelper.addToolMaterial("ShadowToolMaterial", 5, 8192, 16.0F, 8.0F, 64);
+    public static ToolMaterial ShadowSwordMaterial = EnumHelper.addToolMaterial("ShadowSwordMaterial", 5, 8192, 16.0F, 8.0F, 64);
+    public static ToolMaterial ShadowToolMaterial = EnumHelper.addToolMaterial("ShadowToolMaterial", 5, 8192, 16.0F, 2.0F, 64);
+    public static ToolMaterial ShadowDisassemblerMaterial = EnumHelper.addToolMaterial("ShadowDisassemblerMaterial", 5, 8192, 16.0F, 996.0F, 64);
 
     //Armor Materials
     public static ArmorMaterial ShadowArmorMaterial = EnumHelper.addArmorMaterial("ShadowArmorMaterial", 8192, new int[]{3, 8, 6, 3}, 64);

@@ -3,6 +3,7 @@ package net.shadowblade.shadowcraft.init;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
@@ -23,17 +24,23 @@ public class SCRecipes
         GameRegistry.addSmelting(new ItemStack(SCItems.ShadowNickelDust), new ItemStack(SCItems.NickelIngot), xp);
         GameRegistry.addSmelting(new ItemStack(SCItems.ShadowPlatinumDust), new ItemStack(SCItems.PlatinumIngot), xp);
 
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowIronDust, 2), new ItemStack(SCItems.ShadowOrb, 1, OreDictionary.WILDCARD_VALUE), "oreIron"));
-        // TODO (the stuff bellow is temporary commented out while I try to figure out the recipes)
-        /*int oreOutput = 8;
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowIronDust, oreOutput), SCItems.ShadowOrb, "oreIron"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowGoldDust, oreOutput), SCItems.ShadowOrb, "oreGold"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowCopperDust, oreOutput), SCItems.ShadowOrb, "oreCopper"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowTinDust, oreOutput), SCItems.ShadowOrb, "oreTin"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowSilverDust, oreOutput), SCItems.ShadowOrb, "oreSilver"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowLeadDust, oreOutput), SCItems.ShadowOrb, "oreLead"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowNickelDust, oreOutput), SCItems.ShadowOrb, "oreNickel"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowPlatinumDust, oreOutput), SCItems.ShadowOrb, "orePlatinum"));*/
+        int oreOutput = 4;
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowIronDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreIron"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowGoldDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreGold"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowCopperDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreCopper"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowTinDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreTin"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowSilverDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreSilver"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowLeadDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreLead"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowNickelDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "oreNickel"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowPlatinumDust, oreOutput),
+                new ItemStack(SCItems.ShadowOrb), "orePlatinum"));
 
         //Basic Items
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowCrystal), "AAA", "ABA", "AAA",
@@ -50,7 +57,7 @@ public class SCRecipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowGear), " A ", "ABA", " A ",
                 'A', "ingotShadow",
                 'B', "ingotIron"));
-        // TODO GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowOrb), "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", Items.flint));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowOrb), "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", "shardsShadow", Items.flint));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowStar), "AAA", "ABA", "AAA",
                 'A', "crystalShadow",
                 'B', Items.nether_star));
@@ -107,13 +114,33 @@ public class SCRecipes
                 'F', "blockEmerald"));
 
         //Armor
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowHelmet), "AAA", "A A", "   ",
+            ItemStack shadowHelmet = new ItemStack(SCItems.ShadowHelmet);
+            shadowHelmet.addEnchantment(Enchantment.protection, 10);
+            shadowHelmet.addEnchantment(Enchantment.fireProtection, 10);
+            shadowHelmet.addEnchantment(Enchantment.blastProtection, 10);
+            shadowHelmet.addEnchantment(Enchantment.projectileProtection, 10);
+        GameRegistry.addRecipe(new ShapedOreRecipe(shadowHelmet, "AAA", "A A", "   ",
                 'A', "plateShadow"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowChestplate), "A A", "AAA", "AAA",
+            ItemStack shadowChestplate = new ItemStack(SCItems.ShadowChestplate);
+            shadowChestplate.addEnchantment(Enchantment.protection, 10);
+            shadowChestplate.addEnchantment(Enchantment.fireProtection, 10);
+            shadowChestplate.addEnchantment(Enchantment.blastProtection, 10);
+            shadowChestplate.addEnchantment(Enchantment.projectileProtection, 10);
+        GameRegistry.addRecipe(new ShapedOreRecipe(shadowChestplate, "A A", "AAA", "AAA",
                 'A', "plateShadow"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowLeggings), "AAA", "A A", "A A",
+            ItemStack shadowLeggings = new ItemStack(SCItems.ShadowLeggings);
+            shadowLeggings.addEnchantment(Enchantment.protection, 10);
+            shadowLeggings.addEnchantment(Enchantment.fireProtection, 10);
+            shadowLeggings.addEnchantment(Enchantment.blastProtection, 10);
+            shadowLeggings.addEnchantment(Enchantment.projectileProtection, 10);
+        GameRegistry.addRecipe(new ShapedOreRecipe(shadowLeggings, "AAA", "A A", "A A",
                 'A', "plateShadow"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowBoots), "   ", "A A", "A A",
+            ItemStack shadowBoots = new ItemStack(SCItems.ShadowBoots);
+            shadowBoots.addEnchantment(Enchantment.protection, 10);
+            shadowBoots.addEnchantment(Enchantment.fireProtection, 10);
+            shadowBoots.addEnchantment(Enchantment.blastProtection, 10);
+            shadowBoots.addEnchantment(Enchantment.projectileProtection, 10);
+        GameRegistry.addRecipe(new ShapedOreRecipe(shadowBoots, "   ", "A A", "A A",
                 'A', "plateShadow"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCItems.ShadowHelmetOfRevealing), "ABC", "#D#", "EFG",
                 'A', "shardAir",

@@ -14,7 +14,7 @@ public class ShadowSword extends ItemSword implements IRepairable
 {
     public ShadowSword()
     {
-        super(SCItems.ShadowToolMaterial);
+        super(SCItems.ShadowSwordMaterial);
         this.setUnlocalizedName(Refs.SHADOW_SWORD);
         this.setCreativeTab(SCTabs.SC_TAB);
     }

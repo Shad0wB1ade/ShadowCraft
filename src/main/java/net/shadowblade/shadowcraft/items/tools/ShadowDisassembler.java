@@ -6,28 +6,56 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import mods.railcraft.api.core.items.IToolCrowbar;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.EnumHelper;
+import net.shadowblade.shadowcraft.init.SCItems;
 import net.shadowblade.shadowcraft.items.BaseItem;
 import net.shadowblade.shadowcraft.references.Refs;
 
 import java.util.List;
 
-public class ShadowDisassembler extends BaseItem implements IToolHammer, IToolWrench, IToolCrowbar
+public class ShadowDisassembler extends ItemSword implements IToolHammer, IToolWrench, IToolCrowbar
 {
     float digSpeed = 32768.0F * 32;
 
     public ShadowDisassembler()
     {
+        super(SCItems.ShadowDisassemblerMaterial);
         this.setUnlocalizedName(Refs.SHADOW_DISASSEMBLER);
         this.setMaxDamage(-1);
         this.setMaxStackSize(1);
         this.setFull3D();
+    }
+    @Override
+    public String getUnlocalizedName()
+    {
+        return String.format("item.%s%s", Refs.TEXTURE_LOCATION, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    @Override
+    public String getUnlocalizedName(ItemStack itemStack)
+    {
+        return String.format("item.%s%s", Refs.TEXTURE_LOCATION, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IIconRegister iconRegister)
+    {
+        itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+    }
+
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
     @SideOnly(Side.CLIENT)
     public boolean hasEffect(ItemStack stack)
@@ -51,9 +79,9 @@ public class ShadowDisassembler extends BaseItem implements IToolHammer, IToolWr
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean bool) {
         super.addInformation(stack, player, list, bool);
-        list.add(EnumChatFormatting.RED + "Dangerous!");
-        list.add(EnumChatFormatting.BLUE + "Also Acts As A Wrench");
-        list.add(EnumChatFormatting.BLUE + "Somewhat...");
+        list.add(EnumChatFormatting.DARK_RED + "Dangerous!");
+        list.add(EnumChatFormatting.DARK_GREEN + "Also acts as a wrench!");
+        list.add(EnumChatFormatting.BLUE + "Just for DimitrisKater:");
 
     }
     @Override
