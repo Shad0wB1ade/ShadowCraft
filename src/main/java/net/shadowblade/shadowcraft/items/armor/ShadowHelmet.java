@@ -12,6 +12,5 @@ public class ShadowHelmet extends ShadowArmor implements IRepairable
     {
         super(SCItems.ShadowArmorMaterial, ShadowCraft.proxy.addArmor("shadowArmor"), 0);
         this.setUnlocalizedName(Refs.SHADOW_HELMET);
-        this.setMaxDamage(8192);
     }
 }

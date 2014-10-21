@@ -6,14 +6,8 @@ import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import net.shadowblade.shadowcraft.items.armor.*;
-import net.shadowblade.shadowcraft.items.battlegear.ShadowDagger;
-import net.shadowblade.shadowcraft.items.battlegear.ShadowMace;
-import net.shadowblade.shadowcraft.items.battlegear.ShadowSpear;
-import net.shadowblade.shadowcraft.items.battlegear.ShadowWaraxe;
-import net.shadowblade.shadowcraft.items.baubles.ShadowAmuletOfRegeneration;
-import net.shadowblade.shadowcraft.items.baubles.ShadowBeltOfFlight;
-import net.shadowblade.shadowcraft.items.baubles.ShadowRingOfFireResistance;
-import net.shadowblade.shadowcraft.items.baubles.ShadowRingOfNightVision;
+import net.shadowblade.shadowcraft.items.battlegear.*;
+import net.shadowblade.shadowcraft.items.baubles.*;
 import net.shadowblade.shadowcraft.items.main.*;
 import net.shadowblade.shadowcraft.items.materials.dusts.*;
 import net.shadowblade.shadowcraft.items.materials.ingots.*;
@@ -23,12 +17,11 @@ import net.shadowblade.shadowcraft.references.Refs;
 public class SCItems
 {
     //Tool Materials
-    public static ToolMaterial ShadowSwordMaterial = EnumHelper.addToolMaterial("ShadowSwordMaterial", 5, 8192, 16.0F, 8.0F, 64);
-    public static ToolMaterial ShadowToolMaterial = EnumHelper.addToolMaterial("ShadowToolMaterial", 5, 8192, 16.0F, 2.0F, 64);
-    public static ToolMaterial ShadowDisassemblerMaterial = EnumHelper.addToolMaterial("ShadowDisassemblerMaterial", 5, 8192, 16.0F, 996.0F, 64);
+    public static ToolMaterial ShadowSwordMaterial = EnumHelper.addToolMaterial("ShadowSwordMaterial", 5, 2048, 16.0F, 8.0F, 64);
+    public static ToolMaterial ShadowToolMaterial = EnumHelper.addToolMaterial("ShadowToolMaterial", 5, 2048, 16.0F, 2.0F, 64);
 
     //Armor Materials
-    public static ArmorMaterial ShadowArmorMaterial = EnumHelper.addArmorMaterial("ShadowArmorMaterial", 8192, new int[]{3, 8, 6, 3}, 64);
+    public static ArmorMaterial ShadowArmorMaterial = EnumHelper.addArmorMaterial("ShadowArmorMaterial", 2048, new int[]{3, 8, 6, 3}, 64);
 
     //Basic Items
     public static final Item ShadowShards = new ShadowShards();
@@ -37,10 +30,13 @@ public class SCItems
     public static final Item ShadowIngot = new ShadowIngot();
     public static final Item ShadowGear = new ShadowGear();
     public static final Item ShadowOrb = new ShadowOrb();
-    public static final Item ShadowStar = new ShadowStar();
+    public static final Item ShadowStarX1 = new ShadowStarX1();
+    public static final Item ShadowStarX9 = new ShadowStarX9();
+    public static final Item ShadowStarX81 = new ShadowStarX81();
     public static final Item ShadowStick = new ShadowStick();
     public static final Item ShadowStickLong = new ShadowStickLong();
     public static final Item ShadowPlate = new ShadowPlate();
+    public static final Item ShadowHammer = new ShadowHammer();
     public static final Item ShadowSeeds = new ShadowSeeds();
 
     //Tools
@@ -49,6 +45,7 @@ public class SCItems
     public static final Item ShadowSpade = new ShadowSpade();
     public static final Item ShadowAxe = new ShadowAxe();
     public static final Item ShadowHoe = new ShadowHoe();
+    public static final Item ShadowBow = new ShadowBow();
     public static final Item ShadowShears = new ShadowShears();
     public static final Item ShadowFishingRod = new ShadowFishingRod();
     public static final Item ShadowDisassembler = new ShadowDisassembler();
@@ -99,10 +96,13 @@ public class SCItems
         GameRegistry.registerItem(ShadowIngot, Refs.SHADOW_INGOT);
         GameRegistry.registerItem(ShadowGear, Refs.SHADOW_GEAR);
         GameRegistry.registerItem(ShadowOrb, Refs.SHADOW_ORB);
-        GameRegistry.registerItem(ShadowStar, Refs.SHADOW_STAR);
+        GameRegistry.registerItem(ShadowStarX1, Refs.SHADOW_STAR_X1);
+        GameRegistry.registerItem(ShadowStarX9, Refs.SHADOW_STAR_X9);
+        GameRegistry.registerItem(ShadowStarX81, Refs.SHADOW_STAR_X81);
         GameRegistry.registerItem(ShadowStick, Refs.SHADOW_STICK);
         GameRegistry.registerItem(ShadowStickLong, Refs.SHADOW_STICK_LONG);
         GameRegistry.registerItem(ShadowPlate, Refs.SHADOW_PLATE);
+        GameRegistry.registerItem(ShadowHammer, Refs.SHADOW_HAMMER);
         GameRegistry.registerItem(ShadowSeeds, Refs.SHADOW_SEEDS);
 
         //Tools
@@ -111,6 +111,7 @@ public class SCItems
         GameRegistry.registerItem(ShadowSpade, Refs.SHADOW_SPADE);
         GameRegistry.registerItem(ShadowAxe, Refs.SHADOW_AXE);
         GameRegistry.registerItem(ShadowHoe, Refs.SHADOW_HOE);
+        GameRegistry.registerItem(ShadowBow, Refs.SHADOW_BOW);
         GameRegistry.registerItem(ShadowShears, Refs.SHADOW_SHEARS);
         GameRegistry.registerItem(ShadowFishingRod, Refs.SHADOW_FISHING_ROD);
         GameRegistry.registerItem(ShadowDisassembler, Refs.SHADOW_DISASSEMBLER);

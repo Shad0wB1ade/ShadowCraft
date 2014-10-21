@@ -14,6 +14,7 @@ public class ShadowAmuletOfRegeneration extends BaseItem implements IBauble
     public ShadowAmuletOfRegeneration()
     {
         this.setUnlocalizedName(Refs.SHADOW_AMULET_OF_REGENERATION);
+        this.setMaxStackSize(1);
     }
     @Override
     public BaubleType getBaubleType(ItemStack itemstack) {

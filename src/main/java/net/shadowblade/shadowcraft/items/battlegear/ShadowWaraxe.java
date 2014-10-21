@@ -25,7 +25,7 @@ public class ShadowWaraxe extends ItemSword implements IPenetrateWeapon, IRepair
     }
     public int getPenetratingPower(ItemStack stack)
     {
-        return 8;
+        return 4;
     }
     @Override
     public String getUnlocalizedName()
@@ -53,6 +53,6 @@ public class ShadowWaraxe extends ItemSword implements IPenetrateWeapon, IRepair
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
         super.addInformation(par1ItemStack, par2EntityPlayer, par3List, par4);
-        par3List.add(EnumChatFormatting.DARK_GREEN + "Armor Penetration: 8");
+        par3List.add(EnumChatFormatting.DARK_GREEN + "Armor Penetration: 4");
     }
 }

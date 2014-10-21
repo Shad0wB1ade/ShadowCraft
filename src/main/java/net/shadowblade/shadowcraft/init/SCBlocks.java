@@ -11,7 +11,6 @@ public class SCBlocks
     public static final Block NetherShadowOre = new NetherShadowOre();
     public static final Block EndShadowOre = new EndShadowOre();
     public static final Block ShadowMetalBlock = new ShadowMetalBlock();
-    public static final Block ShadowStarBlock = new ShadowStarBlock();
     public static final Block ShadowCrop = new ShadowCrop();
     public static final Block ShadowStone = new ShadowStone();
     public static final Block ShadowStoneBricks = new ShadowStoneBricks();
@@ -24,7 +23,6 @@ public class SCBlocks
         GameRegistry.registerBlock(NetherShadowOre, Refs.NETHER_SHADOW_ORE);
         GameRegistry.registerBlock(EndShadowOre, Refs.END_SHADOW_ORE);
         GameRegistry.registerBlock(ShadowMetalBlock, Refs.SHADOW_METAL_BLOCK);
-        GameRegistry.registerBlock(ShadowStarBlock, Refs.SHADOW_STAR_BLOCK);
         GameRegistry.registerBlock(ShadowCrop, Refs.SHADOW_CROPS);
         GameRegistry.registerBlock(ShadowStone, Refs.SHADOW_STONE);
         GameRegistry.registerBlock(ShadowStoneBricks, Refs.SHADOW_STONE_BRICKS);

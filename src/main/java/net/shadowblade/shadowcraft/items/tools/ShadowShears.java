@@ -16,7 +16,7 @@ public class ShadowShears extends ItemShears implements IRepairable
         super();
         this.setUnlocalizedName(Refs.SHADOW_SHEARS);
         this.setCreativeTab(SCTabs.SC_TAB);
-        this.setMaxDamage(8192);
+        this.setMaxDamage(2048);
     }
     @Override
     public String getUnlocalizedName()

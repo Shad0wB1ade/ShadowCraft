@@ -14,6 +14,7 @@ public class ShadowRingOfNightVision extends BaseItem implements IBauble
     public ShadowRingOfNightVision()
     {
         this.setUnlocalizedName(Refs.SHADOW_RING_OF_NIGHT_VISION);
+        this.setMaxStackSize(1);
     }
     @Override
     public BaubleType getBaubleType(ItemStack itemstack) {

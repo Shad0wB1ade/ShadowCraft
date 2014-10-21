@@ -12,6 +12,5 @@ public class ShadowChestplate extends ShadowArmor implements IRepairable
     {
         super(SCItems.ShadowArmorMaterial, ShadowCraft.proxy.addArmor("shadowArmor"), 1);
         this.setUnlocalizedName(Refs.SHADOW_CHESTPLATE);
-        this.setMaxDamage(8192);
     }
 }

@@ -4,7 +4,7 @@ public class Refs
 {
     public static final String MOD_ID = "ShadowCraft";
     public static final String MOD_NAME = "ShadowCraft";
-    public static final String MOD_VERSION = "1.0a";
+    public static final String MOD_VERSION = "1.1a";
     public static final String GUI_FACTORY = "net.shadowblade.shadowcraft.utilities.gui.GuiFactory";
     public static final String MOD_DEPENDENCIES = "required-after:Baubles;required-after:battlegear2;";
     public static final String CLIENT_PROXY = "net.shadowblade.shadowcraft.proxies.ClientProxy";
@@ -20,10 +20,13 @@ public class Refs
     public static final String SHADOW_INGOT = "shadowIngot";
     public static final String SHADOW_GEAR = "shadowGear";
     public static final String SHADOW_ORB = "shadowOrb";
-    public static final String SHADOW_STAR = "shadowStar";
+    public static final String SHADOW_STAR_X1 = "shadowStarX1";
+    public static final String SHADOW_STAR_X9 = "shadowStarX9";
+    public static final String SHADOW_STAR_X81 = "shadowStarX81";
     public static final String SHADOW_STICK = "shadowStick";
     public static final String SHADOW_STICK_LONG = "shadowStickLong";
     public static final String SHADOW_PLATE = "shadowPlate";
+    public static final String SHADOW_HAMMER = "shadowHammer";
     public static final String SHADOW_SEEDS = "shadowSeeds";
 
     //Tools
@@ -32,9 +35,9 @@ public class Refs
     public static final String SHADOW_SPADE  = "shadowSpade";
     public static final String SHADOW_AXE  = "shadowAxe";
     public static final String SHADOW_HOE  = "shadowHoe";
+    public static final String SHADOW_BOW = "shadowBow";
     public static final String SHADOW_SHEARS  = "shadowShears";
     public static final String SHADOW_FISHING_ROD  = "shadowFishingRod";
-
     public static final String SHADOW_DISASSEMBLER = "shadowDisassembler";
 
     //Armor

@@ -14,6 +14,7 @@ public class ShadowRingOfFireResistance extends BaseItem implements IBauble
     public ShadowRingOfFireResistance()
     {
         this.setUnlocalizedName(Refs.SHADOW_RING_OF_FIRE_RESISTANCE);
+        this.setMaxStackSize(1);
     }
     @Override
     public BaubleType getBaubleType(ItemStack itemstack) {

@@ -12,6 +12,5 @@ public class ShadowBoots extends ShadowArmor implements IRepairable
     {
         super(SCItems.ShadowArmorMaterial, ShadowCraft.proxy.addArmor("shadowArmor"), 3);
         this.setUnlocalizedName(Refs.SHADOW_BOOTS);
-        this.setMaxDamage(8192);
     }
 }

@@ -11,6 +11,7 @@ public class SCMisc
     public static void init()
     {
         LogHelper.info("Version " + Refs.MOD_VERSION);
+        LogHelper.info(Refs.MOD_NAME + " is in alpha use at your own risk!");
 
         //Ore Dictionary
             LogHelper.info("Ore Dictionary Registry Started");

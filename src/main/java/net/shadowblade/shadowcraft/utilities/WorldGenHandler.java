@@ -18,32 +18,32 @@ public class WorldGenHandler implements IWorldGenerator
     {
         if (!(chunkGenerator instanceof ChunkProviderHell) && !(chunkGenerator instanceof ChunkProviderEnd))
         {
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 32; i++)
             {
                 int randPosX = (chunkX * 16) + random.nextInt(16);
-                int randPosY = random.nextInt(10);
+                int randPosY = random.nextInt(256);
                 int randPosZ = (chunkZ * 16) + random.nextInt(16);
                 new WorldGenMinable(SCBlocks.ShadowOre, 0, 8, Blocks.stone).generate(world, random, randPosX, randPosY, randPosZ);
             }
         }
         if (!(chunkGenerator instanceof ChunkProviderGenerate) && !(chunkGenerator instanceof ChunkProviderEnd))
         {
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 32; i++)
             {
                 int randPosX = (chunkX * 16) + random.nextInt(16);
-                int randPosY = random.nextInt(10);
+                int randPosY = random.nextInt(256);
                 int randPosZ = (chunkZ * 16) + random.nextInt(16);
-                new WorldGenMinable(SCBlocks.NetherShadowOre, 0, 8, Blocks.netherrack).generate(world, random, randPosX, randPosY, randPosZ);
+                new WorldGenMinable(SCBlocks.NetherShadowOre, 1, 8, Blocks.netherrack).generate(world, random, randPosX, randPosY, randPosZ);
             }
         }
         if (!(chunkGenerator instanceof ChunkProviderHell) && !(chunkGenerator instanceof ChunkProviderGenerate))
         {
-            for (int i = 0; i < 8; i++)
+            for (int i = 0; i < 32; i++)
             {
                 int randPosX = (chunkX * 16) + random.nextInt(16);
-                int randPosY = random.nextInt(10);
+                int randPosY = random.nextInt(256);
                 int randPosZ = (chunkZ * 16) + random.nextInt(16);
-                new WorldGenMinable(SCBlocks.EndShadowOre, 0, 8, Blocks.end_stone).generate(world, random, randPosX, randPosY, randPosZ);
+                new WorldGenMinable(SCBlocks.EndShadowOre, 2, 8, Blocks.end_stone).generate(world, random, randPosX, randPosY, randPosZ);
             }
         }
     }

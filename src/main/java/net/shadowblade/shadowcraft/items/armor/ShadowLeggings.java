@@ -12,6 +12,5 @@ public class ShadowLeggings extends ShadowArmor implements IRepairable
     {
         super(SCItems.ShadowArmorMaterial, ShadowCraft.proxy.addArmor("shadowArmor"), 2);
         this.setUnlocalizedName(Refs.SHADOW_LEGGINGS);
-        this.setMaxDamage(8192);
     }
 }

@@ -3,10 +3,10 @@ package net.shadowblade.shadowcraft.items.main;
 import net.shadowblade.shadowcraft.items.BaseItem;
 import net.shadowblade.shadowcraft.references.Refs;
 
-public class ShadowStar extends BaseItem
+public class ShadowStarX1 extends BaseItem
 {
-    public ShadowStar()
+    public ShadowStarX1()
     {
-        this.setUnlocalizedName(Refs.SHADOW_STAR);
+        this.setUnlocalizedName(Refs.SHADOW_STAR_X1);
     }
 }

@@ -8,6 +8,10 @@ tile.shadowcraft:endShadowOre.name=End Shadow Ore
 tile.shadowcraft:shadowMetalBlock.name=Shadow Metal Block
 tile.shadowcraft:shadowStarBlock.name=Shadow Star Block
 tile.shadowCrops.name=Shadow Crops
+tile.shadowcraft:shadowStone.name=Shadow Stone
+tile.shadowcraft:shadowStoneBricks.name=Shadow Stone Bricks
+tile.shadowcraft:shadowStoneBricksCracked.name=Shadow Cracked Stone Bricks
+tile.shadowcraft:shadowStoneBricksCarved.name=Shadow Chiseled Stone Bricks
 
 item.shadowcraft:shadowShards.name=Shadow Shards
 item.shadowcraft:shadowCrystal.name=Shadow Crystal
@@ -15,10 +19,13 @@ item.shadowcraft:shadowNugget.name=Shadow Nugget
 item.shadowcraft:shadowIngot.name=Shadow Ingot
 item.shadowcraft:shadowGear.name=Shadow Gear
 item.shadowcraft:shadowOrb.name=Shadow Orb
-item.shadowcraft:shadowStar.name=Shadow Star
+item.shadowcraft:shadowStarX1.name=Shadow Star
+item.shadowcraft:shadowStarX9.name=Shadow Star
+item.shadowcraft:shadowStarX81.name=Shadow Star
 item.shadowcraft:shadowStick.name=Shadow Stick
 item.shadowcraft:shadowStickLong.name=Shadow Long Stick
 item.shadowcraft:shadowPlate.name=Shadow Plate
+item.shadowcraft:shadowHammer.name=Shadow Hammer
 item.shadowcraft:shadowSeeds.name=Shadow Seeds
 
 item.shadowcraft:shadowSword.name=Shadow Blade
@@ -29,6 +36,7 @@ item.shadowcraft:shadowHoe.name=Shadow Hoe
 item.shadowcraft:shadowShears.name=Shadow Shears
 item.shadowcraft:shadowFishingRod.name=Shadow Fishing Rod [BROKEN]
 item.shadowcraft:shadowDisassembler.name=Shadow Disassembler
+item.shadowcraft:shadowBow.name=Shadow Bow
 
 item.shadowcraft:shadowHelmet.name=Shadow Helmet
 item.shadowcraft:shadowChestplate.name=Shadow Chestplate

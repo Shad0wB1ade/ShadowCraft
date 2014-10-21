@@ -13,6 +13,7 @@ public class ShadowBeltOfFlight extends BaseItem implements IBauble
     public ShadowBeltOfFlight()
     {
         this.setUnlocalizedName(Refs.SHADOW_BELT_OF_FLIGHT);
+        this.setMaxStackSize(1);
     }
     @Override
     public BaubleType getBaubleType(ItemStack itemstack) {

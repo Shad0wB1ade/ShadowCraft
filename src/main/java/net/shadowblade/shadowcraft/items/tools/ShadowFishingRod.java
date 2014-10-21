@@ -19,7 +19,7 @@ public class ShadowFishingRod extends ItemFishingRod implements IRepairable
         super();
         this.setUnlocalizedName(Refs.SHADOW_FISHING_ROD);
         this.setCreativeTab(SCTabs.SC_TAB);
-        this.setMaxDamage(8192);
+        this.setMaxDamage(2048);
     }
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer entityPlayer)
     {
