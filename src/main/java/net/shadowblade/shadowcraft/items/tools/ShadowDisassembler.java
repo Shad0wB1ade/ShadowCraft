@@ -22,7 +22,7 @@ import java.util.List;
 public class ShadowDisassembler extends BaseItem implements IToolHammer, IToolWrench, IToolCrowbar, IPenetrateWeapon
 {
     float digSpeed = 32768.0F * 32;
-    int damage = 20;
+    int damage = 40;
 
     public ShadowDisassembler()
     {

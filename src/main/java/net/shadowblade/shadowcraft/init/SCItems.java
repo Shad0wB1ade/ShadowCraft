@@ -21,7 +21,7 @@ public class SCItems
     public static ToolMaterial ShadowToolMaterial = EnumHelper.addToolMaterial("ShadowToolMaterial", 5, 2048, 16.0F, 2.0F, 64);
 
     //Armor Materials
-    public static ArmorMaterial ShadowArmorMaterial = EnumHelper.addArmorMaterial("ShadowArmorMaterial", 2048, new int[]{3, 8, 6, 3}, 64);
+    public static ArmorMaterial ShadowArmorMaterial = EnumHelper.addArmorMaterial("ShadowArmorMaterial", 512, new int[]{3, 8, 6, 3}, 64);
 
     //Basic Items
     public static final Item ShadowShards = new ShadowShards();

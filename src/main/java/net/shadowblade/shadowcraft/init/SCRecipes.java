@@ -2,6 +2,7 @@ package net.shadowblade.shadowcraft.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -136,14 +137,14 @@ public class SCRecipes
                 'B', SCItems.ShadowStickLong));
 
         //Materials
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowIronDust, 4), SCItems.ShadowOrb, "oreIron"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowGoldDust, 4), SCItems.ShadowOrb, "oreGold"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowCopperDust, 4), SCItems.ShadowOrb, "oreCopper"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowTinDust, 4), SCItems.ShadowOrb, "oreTin"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowSilverDust, 4), SCItems.ShadowOrb, "oreSilver"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowLeadDust, 4), SCItems.ShadowOrb, "oreLead"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowNickelDust, 4), SCItems.ShadowOrb, "oreNickel"));
-        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowPlatinumDust, 4), SCItems.ShadowOrb, "orePlatinum"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowIronDust, 2), SCItems.ShadowOrb, "oreIron"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowGoldDust, 2), SCItems.ShadowOrb, "oreGold"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowCopperDust, 2), SCItems.ShadowOrb, "oreCopper"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowTinDust, 2), SCItems.ShadowOrb, "oreTin"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowSilverDust, 2), SCItems.ShadowOrb, "oreSilver"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowLeadDust, 2), SCItems.ShadowOrb, "oreLead"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowNickelDust, 2), SCItems.ShadowOrb, "oreNickel"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(SCItems.ShadowPlatinumDust, 2), SCItems.ShadowOrb, "orePlatinum"));
 
         GameRegistry.addSmelting(new ItemStack(SCItems.ShadowIronDust), new ItemStack(Items.iron_ingot), 1.0F);
         GameRegistry.addSmelting(new ItemStack(SCItems.ShadowGoldDust), new ItemStack(Items.gold_ingot), 1.0F);
@@ -157,5 +158,16 @@ public class SCRecipes
         //Misc
         GameRegistry.addSmelting(new ItemStack(Items.rotten_flesh), new ItemStack(Items.leather), 1.0F);
         GameRegistry.addSmelting(new ItemStack(Items.glass_bottle), new ItemStack(Items.experience_bottle), 1.0F);
+
+        //Blocks
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCBlocks.ShadowStone, 8), "AAA", "ABA", "AAA",
+                'A', Blocks.stone,
+                'B', "ingotShadow"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCBlocks.ShadowStoneBricks, 4), "AA ", "AA ", "   ",
+                'A', SCBlocks.ShadowStone));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCBlocks.ShadowStoneBricksCracked, 4), "AA ", "AA ", "   ",
+                'A', SCBlocks.ShadowStoneBricks));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(SCBlocks.ShadowStoneBricksCarved, 4), "AA ", "AA ", "   ",
+                'A', SCBlocks.ShadowStoneBricksCracked));
     }
 }
