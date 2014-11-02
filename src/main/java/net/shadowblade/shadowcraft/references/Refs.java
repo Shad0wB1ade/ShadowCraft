@@ -4,7 +4,7 @@ public class Refs
 {
     public static final String MOD_ID = "ShadowCraft";
     public static final String MOD_NAME = "ShadowCraft";
-    public static final String MOD_VERSION = "0.5.4.2";
+    public static final String MOD_VERSION = "0.5.4.3";
     public static final String GUI_FACTORY = "net.shadowblade.shadowcraft.utilities.gui.GuiFactory";
     public static final String MOD_DEPENDENCIES = "required-after:Baubles;required-after:battlegear2;";
     public static final String CLIENT_PROXY = "net.shadowblade.shadowcraft.proxies.ClientProxy";
